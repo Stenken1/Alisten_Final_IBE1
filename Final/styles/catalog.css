@@ -1,0 +1,351 @@
+body{
+	padding: 0;
+	margin: 0;
+	height: 200vh;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+header{
+	width: 100%;
+	height: 30px;
+
+	position: relative;
+
+	background-color: #714D56;
+	color: #F9FFFF;
+}
+header > div{
+	width: 95%;
+	height: 100%;
+	margin: auto;
+
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+header h2, header a{
+	margin: 0;
+
+}
+header h2{
+	font-size: 20px;
+}
+header a{
+	font-size: 12px;
+	margin-right: 20px;
+}
+#Main_page{
+	width: 10%;
+	height: 100%;
+	margin-top: 5px;
+}
+h2 + div{
+	width: 20%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#slogan_label{
+	width: 100%;
+	font-family: "Garamond";
+
+	height: 70px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+#slogan_label p{
+	width: 100%;
+	font-size: 40px;
+	font-style: italic;
+
+	text-align: center;
+
+
+	color: #714D56;
+	margin: 0;
+}
+
+
+#upper_navigation{
+	background-color: #E3AE8B;
+	width: 100%;
+	height: 60px;
+	font-family: "Monaco", monospace;
+}
+#upper_navigation > div{
+	width: 40%;
+	height: 100%;
+	margin: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+	align-items: center;
+}
+#upper_navigation a{
+	color: #714D56;
+}
+
+
+
+
+#slogan_label + div{
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid lightgrey;
+	border-top: 1px solid lightgrey;
+	position: sticky;
+	top: 0;
+	z-index: 2;	
+}
+
+#sticky_label{
+	width: 98%;
+	height: 40px;
+	margin: auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#sticky_label h2{
+	width: 10%;
+	margin: 0;
+}
+#sticky_label a{
+	font-size: 25px;
+	color: black;
+}
+
+
+
+#content{
+	width: 100%;
+
+	display: flex;
+}
+#side_nav{
+	width: 20%;
+	height: 700px;
+	padding-top: 50px;
+	position:sticky;
+	top: 0;
+}
+#navigation{
+	display: flex;
+	flex-direction: column;
+	width: 95%;
+	padding-left: 10px;
+	background-color: #E3AE8B;
+}
+#navigation a{
+	color: black;
+	padding: 7px;
+	border-top: 1px solid #714D56;
+	width: 90%;
+}
+#navigation a:hover{
+	background-color: #714D56;
+	color: white;
+}
+
+#product_place{
+	width: 80%;
+}
+#product_place > section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	font-family: "Monaco", monospace;
+	width: 100%;
+	margin: auto;
+}
+.position_block{
+	max-width: 30%;
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	transition: 1s;
+}
+
+.position_block img{
+	width: 100%;
+}
+
+.position_block p{
+	color: grey;
+	margin-top: 0;
+	margin-left: 10px;
+}
+.position_block h3{
+	font-size: 20px;
+	margin-left: 5px;
+	color: black;
+	transition: 1s;
+}
+.position_block:hover h3{
+	color: #714D56;
+	padding-left: 15px;
+	transition: 1s;
+}
+.position_block:hover{
+	box-shadow: 0 0 10px black;
+	transition: 3s;
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+	width: 100%;
+	background-color: #807272;
+	color: white;
+	padding-bottom: 10px;
+	padding-top: 50px;
+}
+
+
+
+footer > div{
+	width: 60%;
+	margin: auto;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.last_labels{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+.last_labels p{
+	font-size: 18px;
+}
+.last_labels a{
+	text-decoration: none;
+	margin-top: 7px;
+	color: #d9d7d7;
+	font-size: 14px;
+	width:auto;
+}
+
+
+
+
+#last_hr{
+	width: 90%;
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+#watermark{
+	width: 100%;
+}
+#watermark p{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#side_navigation{
+	display: none;
+
+	position: fixed;
+	top: 0;
+	right: 0;
+
+	height: 100%;
+	width: 200px;
+
+	padding: 10px 8px 0 8px;
+
+	font-family:monospace;
+	font-size: 30px;
+	color: white;
+
+	background-color: dimgray;
+	z-index:5;
+}
+
+#close_nav{
+	position: absolute;
+	top: 0;
+	right: 40px;
+	margin-top: 10px;
+}
+
+
+#links_block{
+	margin-top:40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.side_link{
+	margin: 10px 0px 5px 10px;
+
+	color: lightgrey;
+	text-decoration: none;
+}
+.side_link:hover{
+	color: white;
+}
+
+
+
+.theme{
+	font-size: 25px;
+	width: 35px;
+	height: 35px;
+
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+.theme p{
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+#darkmode{
+	display: none;
+}
+
